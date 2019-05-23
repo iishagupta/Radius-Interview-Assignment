@@ -57,7 +57,7 @@ def githubAPI(url):
     for issue in issues_json:
         created_at = issue.get('created_at')
         if (created_at):
-            date = datetime.datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%S%z")
+            date = datetime.datetime.strptime(created_at[:-1], "%Y-%m-%dT%H:%M:%S")
             date = date.replace(tzinfo=pytz.UTC)
             if date < now-datetime.timedelta(days=7): # date is before 1 week
                 all_issues += 1
