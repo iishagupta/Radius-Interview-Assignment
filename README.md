@@ -16,7 +16,9 @@ Read `main.py` for more.
 2) `cd Radius-Interview-Assignment`  
 3) `pip3 install flask`  
 4) `pip3 install pytz`  
-5) You might want to install these dependencies in virtual_env if you want.  
+5) `npm install unirest`
+6) Make sure you have `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` in your environment variables.  
+7) You might want to install these dependencies in virtual_env if you want.  
 
 
 # Running
